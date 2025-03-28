@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Save the Children</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #d63384;
+        }
+        p {
+            text-align: justify;
+        }
+        label {
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+        }
+        input[type="reset"] {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Support Save the Children</h1>
+    
+    <p>By supporting Save the Children, you are helping to ensure that every child gets the future they deserve. Here’s why your support matters:</p>
+    <ul>
+        <li><strong>Providing Essential Needs:</strong> Your contribution helps provide food, clean water, and medical assistance to children in need.</li>
+        <li><strong>Education for All:</strong> We work to ensure children have access to quality education, empowering them for a brighter future.</li>
+        <li><strong>Emergency Relief:</strong> We provide immediate aid in times of crisis, such as natural disasters and conflicts, ensuring children's safety and well-being.</li>
+    </ul>
+
+    <form action="submit_form.php" method="POST">
+        <div class="form-group">
+            <label for="first-name">First Name (required):</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">Last Name (required):</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Sex (required):</label><br>
+            <input type="radio" id="male" name="sex" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="prefer-not-say" name="sex" value="prefer-not-say">
+            <label for="prefer-not-say">Prefer not to say</label>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address (required):</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contact-number">Contact Number (optional):</label>
+            <input type="tel" id="contact-number" name="contact-number">
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Sign Up">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
